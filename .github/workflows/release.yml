@@ -1,12 +1,6 @@
 name: Release
 
 on:
-  push:
-    branches:
-      - master
-  schedule:
-    # Nightly cut at 09:00 UTC, after the workday's merges have settled.
-    - cron: "0 9 * * *"
   workflow_dispatch:
     inputs:
       channel:
